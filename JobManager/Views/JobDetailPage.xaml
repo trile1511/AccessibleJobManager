@@ -23,12 +23,17 @@
         <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}">
             <StackLayout Margin="20" VerticalOptions="FillAndExpand">
                 <Label Text="Name:" FontSize="Medium" />
-                <Entry Text="{Binding Name}" FontSize="Small"/>
+                <Entry Text="{Binding Name}" FontSize="Small"
+                       AutomationProperties.IsInAccessibleTree="True" />
                 <Label Text="Description:" FontSize="Medium" />
-                <Entry Text="{Binding Description}" FontSize="Small"/>
-                <Button Text="Save" Command="{Binding SaveCommand}" />
-                <Button Text="Take Picture" Command="{Binding TakePictureCommand}" />
-                <Image Source="{Binding Picture}"/>
+                <Entry Text="{Binding Description}" FontSize="Small"
+                       AutomationProperties.IsInAccessibleTree="True" />
+                <Button Text="Save" Command="{Binding SaveCommand}"
+                         AutomationProperties.IsInAccessibleTree="True" />
+                <Button Text="Take Picture" Command="{Binding TakePictureCommand}"
+                         AutomationProperties.IsInAccessibleTree="True" />
+                <Image Source="{Binding Picture}"
+                       AutomationProperties.IsInAccessibleTree="True" />
 
                 <Label Text="Pictures:" FontSize="Large" />
 
@@ -44,7 +49,8 @@
                                     <Image
                                         Source="{Binding Source}"
                                         WidthRequest="200"
-                                        HeightRequest="200"/>
+                                        HeightRequest="200"
+                                        AutomationProperties.IsInAccessibleTree="True" />
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
