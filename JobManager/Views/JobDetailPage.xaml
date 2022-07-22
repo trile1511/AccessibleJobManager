@@ -33,7 +33,8 @@
                 <Button Text="Take Picture" Command="{Binding TakePictureCommand}"
                          AutomationProperties.IsInAccessibleTree="True" />
                 <Image Source="{Binding Picture}"
-                       AutomationProperties.IsInAccessibleTree="True" />
+                       AutomationProperties.IsInAccessibleTree="True"
+                       AutomationProperties.Name="This is a picture"/>
 
                 <Label Text="Pictures:" FontSize="Large" />
 
@@ -50,7 +51,8 @@
                                         Source="{Binding Source}"
                                         WidthRequest="200"
                                         HeightRequest="200"
-                                        AutomationProperties.IsInAccessibleTree="True" />
+                                        AutomationProperties.IsInAccessibleTree="True"
+                                        AutomationProperties.Name="{Binding Description}"/>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
