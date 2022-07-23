@@ -29,9 +29,11 @@
                 <Entry Text="{Binding Description}" FontSize="Small"
                        AutomationProperties.IsInAccessibleTree="True" />
                 <Button Text="Save" Command="{Binding SaveCommand}"
-                         AutomationProperties.IsInAccessibleTree="True" />
+                         AutomationProperties.IsInAccessibleTree="True"
+                        AutomationProperties.HelpText="Save the current Job Detail"/>
                 <Button Text="Take Picture" Command="{Binding TakePictureCommand}"
-                         AutomationProperties.IsInAccessibleTree="True" />
+                         AutomationProperties.IsInAccessibleTree="True"
+                        AutomationProperties.HelpText="Take a picture to attach to the current Job Detail"/>
                 <Image Source="{Binding Picture}"
                        AutomationProperties.IsInAccessibleTree="True"
                        AutomationProperties.Name="This is a picture"/>

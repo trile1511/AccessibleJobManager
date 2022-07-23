@@ -17,7 +17,8 @@
             <Label Text="Orientation: " FontSize="Medium" />
             <Label Text="{Binding Orientation}" FontSize="Large" />
             <Button Text="Get Orientation" Command="{Binding GetOrientationCommand}"
-                     AutomationProperties.IsInAccessibleTree="True" />
+                     AutomationProperties.IsInAccessibleTree="True"
+                    AutomationProperties.HelpText="Get device orientation and show on the screen" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

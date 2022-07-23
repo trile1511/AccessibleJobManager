@@ -15,7 +15,8 @@
                 HorizontalOptions="CenterAndExpand" />
 
             <Button Text="Get Location" Command="{Binding GetLocationCommand}"
-                     AutomationProperties.IsInAccessibleTree="True" />
+                     AutomationProperties.IsInAccessibleTree="True"
+                    AutomationProperties.HelpText="Get device geo-location and show on the screen" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
